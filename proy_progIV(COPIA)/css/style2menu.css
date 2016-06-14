@@ -1,0 +1,114 @@
+/* inicio de código que da estilo al menu */
+*{
+	/*margin: 0;
+	padding: 0;*/
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+	}
+	header{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+	}
+	header{
+	/*height: 50px;*/
+	background: #CE852A;
+	color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	aling-items: center;
+	/*estos son elementos que he agregado al código*/
+	width: 70%;
+	margin-left: 15%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	}
+	#btn-menu{
+	display: none;
+	}
+
+	header label{
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+	
+	}
+	.menu ul{
+	margin: 0;
+	padding: 0;
+	background: #CE852A;
+	display: flex;
+	list-style: none;
+	
+	}
+	.menu a{
+	display:block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+	}
+	.menu a:hover{
+	background: rgba(0,0,0, 0.4);
+	}
+@media (max-width:768px){
+
+header label {
+display: block;
+}
+.menu {
+position:absolute;
+top: 29px;
+/*left: 0;*/
+left: 15%;
+width: 70%;
+transform: translateX(-121%);
+transition: all 0.3s;
+}
+.menu ul{
+display: block;
+background: #555;
+}
+#btn-menu:checked ~ .menu{
+	transform: translateX(0%);
+	}
+
+}
+
+
+@media (max-width:1130px){
+
+header label {
+display: block;
+}
+.menu {
+position:absolute;
+top: 29px;
+/*left: 0;*/
+left: 15%;
+width: 70%;
+transform: translateX(-121%);
+transition: all 0.3s;
+}
+.menu ul{
+display: block;
+background: #555;
+width: 100%;
+}
+#btn-menu:checked ~ .menu{
+	transform: translateX(0%);
+	}
+
+}
+
+/* fin de código que da estilo al menu*/
+
+
+	
+}
+#uno{
+	width:30% ;
+	
+	background-color: yellow;
+}
+
